@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="#595959"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="6dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            tools:text="Nama" />
+
+
+        <TextView
+            android:id="@+id/tv_nim"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nama"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:textColor="#C1C1C1"
+            tools:text="Nim" />
+
+        <TextView
+            android:id="@+id/tv_angkatan"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nim"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="#C1C1C1"
+            tools:text="Angakatan" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_pp"
+            android:layout_width="66dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="315dp"
+            app:civ_border_color="#ffffff"
+            app:civ_border_width="2dp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
